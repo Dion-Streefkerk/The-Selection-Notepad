@@ -8,3 +8,4 @@ blinker==1.8.2
 greenlet==3.1.1
 SQLAlchemy==2.0.35
 Flask-JWT-Extended
+Flask-CORS==3.0.10
