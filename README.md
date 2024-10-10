@@ -1,6 +1,6 @@
-# TheElectionNotePad
+# TheSelectionNotePad
 
-**TheElectionNotePad** is a full-stack web application designed for managing personal notes with seamless interaction between the frontend and backend.
+**TheSelectionNotePad** is a full-stack web application designed for managing personal notes with seamless interaction between the frontend and backend.
 
 ## Table of Contents
 
