@@ -4,7 +4,7 @@ import { ref } from 'vue';
 const isLoggedIn = ref(!!localStorage.getItem('token'));
 
 export function useAuth() {
-  const login = (token) => {
+  const login = (token: any) => {
     localStorage.setItem('token', token);
     isLoggedIn.value = true;
   };
