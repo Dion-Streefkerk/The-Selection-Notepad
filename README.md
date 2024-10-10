@@ -160,13 +160,7 @@ For any further questions or support, feel free to reach out to the maintainer:
 
 - **Email:** dionstreefkerk10@gmail.com
 - **GitHub:** [@yourusername](https://github.com/Dion-Streefkerk)
-- 
-## Happy Note-taking! 📝
 
-You can log in with the following credentials to explore The Election Notepad:
-
-- **Username:** `TestAccount`
-- **Password:** `Test123!`
 
 ## Happy Note-taking! 📝
 
