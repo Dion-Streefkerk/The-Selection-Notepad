@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Login from '@/views/Login.vue';
 import Register from '@/views/Register.vue';
+import Notes from '@/views/Notes.vue';
+import EditNote from '@/views/EditNote.vue';
 
 const routes = [
   {
@@ -16,6 +18,18 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register,
+  },
+  {
+    path: '/notes',
+    name: 'Notes',
+    component: Notes,
+    meta: { requiresAuth: true }, // Mark as a protected route
+  },
+  {
+    path: '/notes/edit/:noteId',
+    name: 'EditNote',
+    component: EditNote,
+    meta: { requiresAuth: true }, // Mark as a protected route
   },
 ];
 
@@ -37,3 +51,4 @@ router.beforeEach((to, from, next) => {
 });
 
 export default router;
+

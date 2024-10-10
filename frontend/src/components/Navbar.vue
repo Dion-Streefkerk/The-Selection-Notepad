@@ -28,6 +28,10 @@
                 <router-link class="nav-link" to="/register">Register</router-link>
               </li>
               
+              <!-- Show these links when the user is logged in -->
+              <li class="nav-item" v-if="isLoggedIn">
+                <router-link class="nav-link" to="/notes">My Notes</router-link>
+              </li>
               <li class="nav-item" v-if="isLoggedIn">
                 <button class="btn btn-link nav-link" @click="logout">Logout</button>
               </li>
@@ -75,5 +79,4 @@
   .nav-link {
     cursor: pointer;
   }
-  </style>
-  
+</style>
