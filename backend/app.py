@@ -18,6 +18,10 @@ jwt = JWTManager(app)
 with app.app_context():
     db.create_all()
 
+@app.route('/')
+def home():
+    return "Backend is running :)"
+
 # Routes for User Registration
 @app.route('/register', methods=['POST'])
 def register():
