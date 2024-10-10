@@ -160,5 +160,19 @@ For any further questions or support, feel free to reach out to the maintainer:
 
 - **Email:** dionstreefkerk10@gmail.com
 - **GitHub:** [@yourusername](https://github.com/Dion-Streefkerk)
+- 
+## Happy Note-taking! 📝
 
-Happy note-taking! 📝
+You can log in with the following credentials to explore The Election Notepad:
+
+- **Username:** `TestAccount`
+- **Password:** `Test123!`
+
+## Happy Note-taking! 📝
+
+You can log in with the following credentials to explore The Election Notepad:
+
+- **Username:** `TestAccount`
+- **Password:** `Test123!`
+
+There are already some pre-made notes, so you can get an idea of what you can do with the notepad, like **organizing your functions**. I've added a code editor-like format to the forms, complete with color and structure using **highlight.js**
