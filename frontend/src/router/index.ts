@@ -40,15 +40,19 @@ const router = createRouter({
 
 // Navigation guard to prevent unauthorized access to protected routes
 router.beforeEach((to, from, next) => {
-  const isLoggedIn = !!localStorage.getItem('token');
+  const isLoggedIn = !!localStorage.getItem('token'); // Checks if there's a token stored (user is logged in)
+
+  // Redirect user to login if they try to access a protected route without being logged in
   if (to.matched.some(record => record.meta.requiresAuth) && !isLoggedIn) {
-    next('/login'); // Redirect to login if trying to access a protected route without being logged in
-  } else if (to.path === '/login' && isLoggedIn) {
-    next('/notes'); // If logged in, redirect from login page to notes page
+    next('/login');
+  } else if ((to.path === '/login' || to.path === '/register') && isLoggedIn) {
+    next('/notes'); // Redirect logged-in users away from login or register page
   } else {
-    next(); // Otherwise, allow navigation
+    next(); // Otherwise, allow the navigation
   }
 });
 
 export default router;
+
+
 
